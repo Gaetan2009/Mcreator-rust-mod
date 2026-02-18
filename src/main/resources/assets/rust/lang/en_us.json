@@ -4,5 +4,20 @@
   "item.rust.etablie": "Etablie",
   "item_group.rust.rust": "Rust",
   "item.rust.grenade_f_1": "Grenade F1",
-  "item.rust.scrap": "Scrap"
+  "item.rust.scrap": "Scrap",
+  "entity.rust.grenade_f_1_entitee": "Grenade F1 Entitee",
+  "item.rust.grenade_f_1_entitee_spawn_egg": "Grenade F1 Entitee Spawn Egg",
+  "item.rust.porte_en_metal": "Porte En Metal",
+  "gui.rust.code.button_0": "0",
+  "gui.rust.code.button_2": "2",
+  "gui.rust.code.button_1": "1",
+  "gui.rust.code.label_valeur": "Valeur",
+  "gui.rust.code.button_8": "8",
+  "gui.rust.code.button_7": "7",
+  "gui.rust.code.button_9": "9",
+  "gui.rust.code.button_4": "4",
+  "gui.rust.code.button_3": "3",
+  "gui.rust.code.button_valide": "validé",
+  "gui.rust.code.button_6": "6",
+  "gui.rust.code.button_5": "5"
 }

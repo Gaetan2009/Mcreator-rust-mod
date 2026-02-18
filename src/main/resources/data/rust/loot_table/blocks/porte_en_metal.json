@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "rust:blocks/porte_en_metal",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rust:porte_en_metal",
+          "conditions": [
+            {
+              "block": "rust:porte_en_metal",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

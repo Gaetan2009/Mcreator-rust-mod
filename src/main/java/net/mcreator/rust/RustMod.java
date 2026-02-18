@@ -20,10 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.rust.init.RustModTabs;
-import net.mcreator.rust.init.RustModItems;
-import net.mcreator.rust.init.RustModEntities;
-import net.mcreator.rust.init.RustModBlocks;
+import net.mcreator.rust.init.*;
 
 import javax.annotation.Nullable;
 
@@ -49,9 +46,11 @@ public class RustMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		RustModBlocks.REGISTRY.register(modEventBus);
+		RustModBlockEntities.REGISTRY.register(modEventBus);
 		RustModItems.REGISTRY.register(modEventBus);
 		RustModEntities.REGISTRY.register(modEventBus);
 		RustModTabs.REGISTRY.register(modEventBus);
+		RustModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

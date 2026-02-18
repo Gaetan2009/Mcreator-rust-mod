@@ -8,7 +8,9 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.rust.item.ScrapItem;
@@ -26,12 +28,16 @@ public class RustModItems {
 	public static final DeferredItem<Item> ETABLIE;
 	public static final DeferredItem<Item> GRENADE_F_1;
 	public static final DeferredItem<Item> SCRAP;
+	public static final DeferredItem<Item> GRENADE_F_1_ENTITEE_SPAWN_EGG;
+	public static final DeferredItem<Item> PORTE_EN_METAL;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
 		ETABLIE = block(RustModBlocks.ETABLIE);
 		GRENADE_F_1 = register("grenade_f_1", GrenadeF1Item::new);
 		SCRAP = register("scrap", ScrapItem::new);
+		GRENADE_F_1_ENTITEE_SPAWN_EGG = register("grenade_f_1_entitee_spawn_egg", properties -> new SpawnEggItem(RustModEntities.GRENADE_F_1_ENTITEE.get(), properties));
+		PORTE_EN_METAL = doubleBlock(RustModBlocks.PORTE_EN_METAL);
 	}
 
 	// Start of user code block custom items
@@ -46,5 +52,13 @@ public class RustModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return doubleBlock(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new DoubleHighBlockItem(block.get(), prop), properties);
 	}
 }

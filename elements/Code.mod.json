@@ -1,0 +1,181 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 150,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1",
+          "text": "1",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 151,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_2",
+          "text": "2",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 196,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_3",
+          "text": "3",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 241,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_4",
+          "text": "4",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 151,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5",
+          "text": "5",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 196,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_6",
+          "text": "6",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 241,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_7",
+          "text": "7",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 151,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_8",
+          "text": "8",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 196,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_9",
+          "text": "9",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 241,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_0",
+          "text": "0",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 196,
+          "y": 128,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_valide",
+          "text": "validé",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 186,
+          "y": 173,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_valeur",
+          "text": {
+            "fixedValue": "Valeur"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 153,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

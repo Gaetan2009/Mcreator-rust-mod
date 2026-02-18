@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "rust:block/port_metal_bas",
+    "bottom": "rust:block/port_metal_bas",
+    "top": "rust:block/porte_metal_haut"
+  },
+  "render_type": "cutout_mipped"
+}

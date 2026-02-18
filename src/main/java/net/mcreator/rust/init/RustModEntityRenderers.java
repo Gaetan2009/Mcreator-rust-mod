@@ -9,11 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.rust.client.renderer.GrenadeF1ProjectileRenderer;
+import net.mcreator.rust.client.renderer.GrenadeF1EntiteeRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class RustModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(RustModEntities.GRENADE_F_1_PROJECTILE.get(), GrenadeF1ProjectileRenderer::new);
+		event.registerEntityRenderer(RustModEntities.GRENADE_F_1_ENTITEE.get(), GrenadeF1EntiteeRenderer::new);
 	}
 }

@@ -178,6 +178,76 @@
           "src/main/resources/assets/rust/items/scrap.json"
         ]
       }
+    },
+    {
+      "name": "GrenadeF1Entitee",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1_entitee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/items/grenade_f_1_entitee_spawn_egg.json",
+          "src/main/resources/assets/rust/models/item/grenade_f_1_entitee_spawn_egg.json",
+          "src/main/java/net/mcreator/rust/client/renderer/GrenadeF1EntiteeRenderer.java",
+          "src/main/java/net/mcreator/rust/entity/GrenadeF1EntiteeEntity.java"
+        ]
+      },
+      "path": "~/items/Grenade"
+    },
+    {
+      "name": "GrenadeF1Apparition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1_apparition",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/GrenadeF1ApparitionProcedure.java"
+        ]
+      },
+      "path": "~/items/Grenade"
+    },
+    {
+      "name": "PorteEnMetal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porte_en_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/blockstates/porte_en_metal.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_left_open.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_right_open.json",
+          "src/main/java/net/mcreator/rust/block/entity/PorteEnMetalBlockEntity.java",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_right.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_right.json",
+          "src/main/resources/assets/rust/items/porte_en_metal.json",
+          "src/main/resources/assets/rust/models/item/porte_en_metal.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left.json",
+          "src/main/resources/data/rust/loot_table/blocks/porte_en_metal.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left_open.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_left.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_right_open.json",
+          "src/main/java/net/mcreator/rust/block/PorteEnMetalBlock.java"
+        ]
+      },
+      "path": "~/block/Porte en metal"
+    },
+    {
+      "name": "Code",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/world/inventory/CodeMenu.java",
+          "src/main/java/net/mcreator/rust/client/gui/CodeScreen.java"
+        ]
+      },
+      "path": "~/block/Porte en metal/GUI Porte"
     }
   ],
   "variable_elements": [],
@@ -188,6 +258,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Rochee"
+    ],
+    "BLOCKS:minecraft:wooden_doors": [
+      "~CUSTOM:PorteEnMetal"
     ]
   },
   "tab_element_order": {},
@@ -198,12 +271,31 @@
       "item.rust.etablie": "Etablie",
       "item_group.rust.rust": "Rust",
       "item.rust.grenade_f_1": "Grenade F1",
-      "item.rust.scrap": "Scrap"
+      "item.rust.scrap": "Scrap",
+      "entity.rust.grenade_f_1_entitee": "Grenade F1 Entitee",
+      "item.rust.grenade_f_1_entitee_spawn_egg": "Grenade F1 Entitee Spawn Egg",
+      "item.rust.porte_en_metal": "Porte En Metal",
+      "gui.rust.code.button_0": "0",
+      "gui.rust.code.button_2": "2",
+      "gui.rust.code.button_1": "1",
+      "gui.rust.code.label_valeur": "Valeur",
+      "gui.rust.code.button_8": "8",
+      "gui.rust.code.button_7": "7",
+      "gui.rust.code.button_9": "9",
+      "gui.rust.code.button_4": "4",
+      "gui.rust.code.button_3": "3",
+      "gui.rust.code.button_valide": "validé",
+      "gui.rust.code.button_6": "6",
+      "gui.rust.code.button_5": "5"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
+      "src/main/java/net/mcreator/rust/init/RustModMenus.java",
+      "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
+      "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
       "src/main/java/net/mcreator/rust/init/RustModEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
@@ -236,6 +328,15 @@
           {
             "name": "Etablie",
             "children": []
+          },
+          {
+            "name": "Porte en metal",
+            "children": [
+              {
+                "name": "GUI Porte",
+                "children": []
+              }
+            ]
           }
         ]
       },
