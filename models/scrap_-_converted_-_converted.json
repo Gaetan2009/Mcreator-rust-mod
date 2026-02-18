@@ -3,13 +3,13 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "block/roue",
-		"1": "block/tole",
-		"2": "block/resort",
-		"3": "block/boulon",
-		"4": "block/tube2",
-		"5": "block/tube",
-		"particle": "block/roue"
+		"0": "roue",
+		"1": "tole",
+		"2": "resort",
+		"3": "boulon",
+		"4": "tube2",
+		"5": "tube",
+		"particle": "roue"
 	},
 	"elements": [
 		{
@@ -234,37 +234,6 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [0, 85, 0],
-			"translation": [0, 7.25, 1.75]
-		},
-		"thirdperson_lefthand": {
-			"translation": [0, 7.25, 0]
-		},
-		"firstperson_righthand": {
-			"rotation": [4, -11, 39],
-			"translation": [0.25, 7.5, -3.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-5, -23, 26],
-			"translation": [0, 9.25, -1]
-		},
-		"ground": {
-			"translation": [0, 4.75, 0]
-		},
-		"gui": {
-			"rotation": [94, -171, 0],
-			"translation": [0.25, -0.5, 0]
-		},
-		"head": {
-			"translation": [0, 14.5, 0]
-		},
-		"fixed": {
-			"rotation": [-90, 0, 0],
-			"translation": [0, 0, -8.25]
-		}
-	},
 	"groups": [
 		{
 			"name": "tube",
