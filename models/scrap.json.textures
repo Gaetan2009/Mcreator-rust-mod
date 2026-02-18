@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "roue",
+        "1": "tole",
+        "2": "resort",
+        "3": "boulon",
+        "4": "tube2",
+        "5": "tube"
+      }
+    }
+  }
+}

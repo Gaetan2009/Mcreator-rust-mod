@@ -56,7 +56,7 @@
     {
       "name": "Etablie",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "etablie",
       "metadata": {
@@ -83,7 +83,7 @@
     {
       "name": "GrenadeF1Projectile",
       "type": "projectile",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grenade_f_1_projectile",
       "metadata": {
@@ -96,7 +96,7 @@
     {
       "name": "GrenadeF1Explosion",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grenade_f_1_explosion",
       "metadata": {
@@ -131,7 +131,7 @@
     {
       "name": "GrenadeF1",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grenade_f_1",
       "metadata": {
@@ -146,7 +146,7 @@
     {
       "name": "GrenadeF1Lance",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grenade_f_1_lance",
       "metadata": {
@@ -161,6 +161,20 @@
         ]
       },
       "path": "~/items/Grenade"
+    },
+    {
+      "name": "Scrap",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/item/ScrapItem.java",
+          "src/main/resources/assets/rust/models/item/scrap.json",
+          "src/main/resources/assets/rust/items/scrap.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -180,29 +194,33 @@
       "item.rust.rochee": "Roche",
       "item.rust.etablie": "Etablie",
       "item_group.rust.rust": "Rust",
-      "item.rust.grenade_f_1": "Grenade F1"
+      "item.rust.grenade_f_1": "Grenade F1",
+      "item.rust.scrap": "Scrap"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
+      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
-      "src/main/resources/rust.mixins.json",
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
     ]
   },
   "foldersRoot": {
