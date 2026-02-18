@@ -14,11 +14,11 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.rust.world.inventory.CodeMenu;
-import net.mcreator.rust.network.CodeButtonMessage;
+import net.mcreator.rust.world.inventory.CodeaMenu;
+import net.mcreator.rust.network.CodeaButtonMessage;
 import net.mcreator.rust.init.RustModScreens;
 
-public class CodeScreen extends AbstractContainerScreen<CodeMenu> implements RustModScreens.ScreenAccessor {
+public class CodeaScreen extends AbstractContainerScreen<CodeaMenu> implements RustModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -26,14 +26,14 @@ public class CodeScreen extends AbstractContainerScreen<CodeMenu> implements Rus
 	private EditBox Code;
 	private Button button_valide;
 
-	public CodeScreen(CodeMenu container, Inventory inventory, Component text) {
+	public CodeaScreen(CodeaMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 150;
+		this.imageWidth = 176;
 		this.imageHeight = 166;
 	}
 
@@ -47,7 +47,7 @@ public class CodeScreen extends AbstractContainerScreen<CodeMenu> implements Rus
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("rust:textures/screens/code.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("rust:textures/screens/codea.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -81,28 +81,27 @@ public class CodeScreen extends AbstractContainerScreen<CodeMenu> implements Rus
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.rust.code.label_code"), 52, 41, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		Code = new EditBox(this.font, this.leftPos + 18, this.topPos + 57, 118, 18, Component.translatable("gui.rust.code.Code"));
+		Code = new EditBox(this.font, this.leftPos + 34, this.topPos + 58, 118, 18, Component.translatable("gui.rust.codea.Code"));
 		Code.setMaxLength(8192);
 		Code.setResponder(content -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 0, "Code", content, false);
 		});
-		Code.setHint(Component.translatable("gui.rust.code.Code"));
+		Code.setHint(Component.translatable("gui.rust.codea.Code"));
 		this.addWidget(this.Code);
-		button_valide = Button.builder(Component.translatable("gui.rust.code.button_valide"), e -> {
-			int x = CodeScreen.this.x;
-			int y = CodeScreen.this.y;
+		button_valide = Button.builder(Component.translatable("gui.rust.codea.button_valide"), e -> {
+			int x = CodeaScreen.this.x;
+			int y = CodeaScreen.this.y;
 			if (true) {
-				ClientPacketDistributor.sendToServer(new CodeButtonMessage(0, x, y, z));
-				CodeButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				ClientPacketDistributor.sendToServer(new CodeaButtonMessage(0, x, y, z));
+				CodeaButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 47, this.topPos + 76, 56, 20).build();
+		}).bounds(this.leftPos + 63, this.topPos + 84, 56, 20).build();
 		this.addRenderableWidget(button_valide);
 	}
 }

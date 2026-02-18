@@ -6,6 +6,10 @@ package net.mcreator.rust.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
@@ -13,14 +17,17 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.rust.item.inventory.CodeSetInventoryCapability;
 import net.mcreator.rust.item.ScrapItem;
 import net.mcreator.rust.item.RocheeItem;
 import net.mcreator.rust.item.RocheItem;
 import net.mcreator.rust.item.GrenadeF1Item;
+import net.mcreator.rust.item.CodeSetItem;
 import net.mcreator.rust.RustMod;
 
 import java.util.function.Function;
 
+@EventBusSubscriber
 public class RustModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(RustMod.MODID);
 	public static final DeferredItem<Item> ROCHE;
@@ -30,6 +37,7 @@ public class RustModItems {
 	public static final DeferredItem<Item> SCRAP;
 	public static final DeferredItem<Item> GRENADE_F_1_ENTITEE_SPAWN_EGG;
 	public static final DeferredItem<Item> PORTE_EN_METAL;
+	public static final DeferredItem<Item> CODE_SET;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
@@ -38,6 +46,7 @@ public class RustModItems {
 		SCRAP = register("scrap", ScrapItem::new);
 		GRENADE_F_1_ENTITEE_SPAWN_EGG = register("grenade_f_1_entitee_spawn_egg", properties -> new SpawnEggItem(RustModEntities.GRENADE_F_1_ENTITEE.get(), properties));
 		PORTE_EN_METAL = doubleBlock(RustModBlocks.PORTE_EN_METAL);
+		CODE_SET = register("code_set", CodeSetItem::new);
 	}
 
 	// Start of user code block custom items
@@ -60,5 +69,10 @@ public class RustModItems {
 
 	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new DoubleHighBlockItem(block.get(), prop), properties);
+	}
+
+	@SubscribeEvent
+	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new CodeSetInventoryCapability(stack), CODE_SET.get());
 	}
 }

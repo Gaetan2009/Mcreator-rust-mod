@@ -2,14 +2,14 @@
   "_fv": 79,
   "_type": "item",
   "definition": {
-    "renderType": 3,
-    "texture": "vert_contoure",
-    "customModelName": "Modelmodel_grenade_f1_Converted",
+    "renderType": 0,
+    "texture": "minecraft:breeze_rod",
+    "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Grenade F1",
+    "name": "Code Set",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -37,16 +37,20 @@
     "glowCondition": {
       "fixedValue": false
     },
+    "guiBoundTo": "Codea",
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "onRightClickedInAir": {
-      "name": "GrenadeF1Lance"
+      "name": "OuvrirGuiCode"
+    },
+    "onRightClickedOnBlock": {
+      "name": "SetCode"
     },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "Arrow"
+      "value": "CUSTOM:GrenadeF1Projectile"
     },
     "projectileDisableAmmoCheck": false,
     "isFood": false,

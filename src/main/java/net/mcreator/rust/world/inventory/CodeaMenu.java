@@ -22,11 +22,11 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-public class CodeMenu extends AbstractContainerMenu implements RustModMenus.MenuAccessor {
+public class CodeaMenu extends AbstractContainerMenu implements RustModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 3)
+			if (!this.containsKey(key) && this.size() >= 2)
 				return null;
 			return super.put(key, value);
 		}
@@ -42,8 +42,8 @@ public class CodeMenu extends AbstractContainerMenu implements RustModMenus.Menu
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public CodeMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(RustModMenus.CODE.get(), id);
+	public CodeaMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(RustModMenus.CODEA.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

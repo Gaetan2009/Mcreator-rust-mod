@@ -13,159 +13,44 @@
       {
         "type": "button",
         "data": {
-          "name": "button_1",
-          "text": "1",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 151,
-          "y": 53,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_2",
-          "text": "2",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 196,
-          "y": 53,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_3",
-          "text": "3",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 241,
-          "y": 53,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_4",
-          "text": "4",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 151,
-          "y": 78,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_5",
-          "text": "5",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 196,
-          "y": 78,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_6",
-          "text": "6",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 241,
-          "y": 78,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_7",
-          "text": "7",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 151,
-          "y": 103,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_8",
-          "text": "8",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 196,
-          "y": 103,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_9",
-          "text": "9",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 241,
-          "y": 103,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_0",
-          "text": "0",
-          "isUndecorated": false,
-          "width": 30,
-          "height": 20,
-          "x": 196,
-          "y": 128,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "name": "button_valide",
           "text": "validé",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CodeBon"
+          },
           "width": 56,
           "height": 20,
           "x": 186,
-          "y": 173,
+          "y": 113,
           "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_valeur",
+          "name": "label_code",
           "text": {
-            "fixedValue": "Valeur"
+            "fixedValue": "DigiCode"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 196,
-          "y": 153,
+          "x": 191,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Code",
+          "name": "Code",
+          "width": 120,
+          "height": 20,
+          "x": 156,
+          "y": 93,
           "locked": false
         }
       }

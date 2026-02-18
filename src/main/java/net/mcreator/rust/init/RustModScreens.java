@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.rust.client.gui.CodeaScreen;
 import net.mcreator.rust.client.gui.CodeScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -15,6 +16,7 @@ public class RustModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(RustModMenus.CODE.get(), CodeScreen::new);
+		event.register(RustModMenus.CODEA.get(), CodeaScreen::new);
 	}
 
 	public interface ScreenAccessor {

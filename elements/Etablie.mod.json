@@ -564,7 +564,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Rust"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
