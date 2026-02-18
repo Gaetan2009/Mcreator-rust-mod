@@ -1,6 +1,10 @@
 package net.mcreator.rust.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.rust.RustMod;
 
 public class GrenadeF1ExplosionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {

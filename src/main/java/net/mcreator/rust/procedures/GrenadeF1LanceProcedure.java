@@ -1,6 +1,16 @@
 package net.mcreator.rust.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.rust.init.RustModEntities;
+import net.mcreator.rust.entity.GrenadeF1ProjectileEntity;
 
 public class GrenadeF1LanceProcedure {
 	public static void execute(Entity entity) {

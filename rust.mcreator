@@ -31,8 +31,8 @@
       "registry_name": "roche",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/java/net/mcreator/rust/item/RocheItem.java",
+          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/resources/assets/rust/items/roche.json"
         ]
       },
@@ -46,9 +46,9 @@
       "registry_name": "rochee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/items/rochee.json",
           "src/main/resources/assets/rust/models/item/rochee.json",
-          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java",
+          "src/main/resources/assets/rust/items/rochee.json"
         ]
       },
       "path": "~/items/roche"
@@ -56,7 +56,7 @@
     {
       "name": "Etablie",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "etablie",
       "metadata": {
@@ -83,7 +83,7 @@
     {
       "name": "GrenadeF1Projectile",
       "type": "projectile",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "grenade_f_1_projectile",
       "metadata": {
@@ -96,7 +96,7 @@
     {
       "name": "GrenadeF1Explosion",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "grenade_f_1_explosion",
       "metadata": {
@@ -131,7 +131,7 @@
     {
       "name": "GrenadeF1",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "grenade_f_1",
       "metadata": {
@@ -146,7 +146,7 @@
     {
       "name": "GrenadeF1Lance",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "grenade_f_1_lance",
       "metadata": {

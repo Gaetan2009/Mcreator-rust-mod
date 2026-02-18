@@ -1,7 +1,31 @@
 package net.mcreator.rust.entity;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ItemSupplier;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+
+import net.mcreator.rust.procedures.GrenadeF1ExplosionProcedure;
+import net.mcreator.rust.init.RustModItems;
+import net.mcreator.rust.init.RustModEntities;
+
+import javax.annotation.Nullable;
+
 public class GrenadeF1ProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(RustModItems.DELETED_MOD_ELEMENT.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(RustModItems.GRENADE_F_1.get());
 	private int knockback = 0;
 
 	public GrenadeF1ProjectileEntity(EntityType<? extends GrenadeF1ProjectileEntity> type, Level world) {
@@ -27,7 +51,7 @@ public class GrenadeF1ProjectileEntity extends AbstractArrow implements ItemSupp
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(RustModItems.DELETED_MOD_ELEMENT.get());
+		return new ItemStack(RustModItems.GRENADE_F_1.get());
 	}
 
 	@Override
@@ -51,6 +75,12 @@ public class GrenadeF1ProjectileEntity extends AbstractArrow implements ItemSupp
 		} else { // knockback might be set by firedFromWeapon passed into constructor
 			super.doKnockback(livingEntity, damageSource);
 		}
+	}
+
+	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		GrenadeF1ExplosionProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
 	}
 
 	@Override
