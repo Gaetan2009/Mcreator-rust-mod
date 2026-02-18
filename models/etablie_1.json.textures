@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "caisse",
+        "1": "meuble",
+        "2": "caisse2",
+        "3": "muni",
+        "4": "perseuse",
+        "5": "piset",
+        "6": "coffree"
+      }
+    }
+  }
+}

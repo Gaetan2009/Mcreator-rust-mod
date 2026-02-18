@@ -1,14 +1,98 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Roche_attack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roche_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/Roche_attackProcedure.java"
+        ]
+      },
+      "path": "~/items/roche"
+    },
+    {
+      "name": "Roche",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roche",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/models/item/roche.json",
+          "src/main/java/net/mcreator/rust/item/RocheItem.java",
+          "src/main/resources/assets/rust/items/roche.json"
+        ]
+      },
+      "path": "~/items/roche"
+    },
+    {
+      "name": "Rochee",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rochee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/items/rochee.json",
+          "src/main/resources/assets/rust/models/item/rochee.json",
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
+        ]
+      },
+      "path": "~/items/roche"
+    },
+    {
+      "name": "Etablie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etablie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/block/EtablieBlock.java",
+          "src/main/resources/assets/rust/blockstates/etablie.json",
+          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
+          "src/main/resources/assets/rust/models/block/etablie.json",
+          "src/main/resources/assets/rust/models/item/etablie.json",
+          "src/main/resources/assets/rust/items/etablie.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Roche"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Rochee"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.rust.roche": "Roche",
+      "item.rust.rochee": "Roche",
+      "item.rust.etablie": "Etablie"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
+      "src/main/java/net/mcreator/rust/init/RustModItems.java",
       "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
       "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
@@ -29,7 +113,17 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "items",
+        "children": [
+          {
+            "name": "roche",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "rust",
