@@ -1,0 +1,15 @@
+{
+  "parent": "rust:custom/etablie_1",
+  "textures": {
+    "all": "minecraft:block/composter_bottom",
+    "particle": "minecraft:block/composter_bottom",
+    "0": "rust:block/caisse",
+    "1": "rust:block/meuble",
+    "2": "rust:block/caisse2",
+    "3": "rust:block/muni",
+    "4": "rust:block/perseuse",
+    "5": "rust:block/piset",
+    "6": "rust:block/coffree"
+  },
+  "render_type": "solid"
+}
