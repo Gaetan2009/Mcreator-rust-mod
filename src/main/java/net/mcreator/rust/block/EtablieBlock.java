@@ -11,7 +11,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class EtablieBlock extends Block {
-	private static final VoxelShape SHAPE = box(0, 0, 0, 32, 32, 16);
+	private static final VoxelShape SHAPE = box(0, 0, 0, 32, 16, 32);
 
 	public EtablieBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
