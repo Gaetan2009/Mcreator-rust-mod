@@ -1,5 +1,23 @@
 package net.mcreator.rust.client.gui;
 
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.rust.world.inventory.CodeaMenu;
+import net.mcreator.rust.network.CodeaButtonMessage;
+import net.mcreator.rust.init.RustModScreens;
+
 public class CodeaScreen extends AbstractContainerScreen<CodeaMenu> implements RustModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -77,6 +95,12 @@ public class CodeaScreen extends AbstractContainerScreen<CodeaMenu> implements R
 		Code.setHint(Component.translatable("gui.rust.codea.Code"));
 		this.addWidget(this.Code);
 		button_valide = Button.builder(Component.translatable("gui.rust.codea.button_valide"), e -> {
+			int x = CodeaScreen.this.x;
+			int y = CodeaScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new CodeaButtonMessage(0, x, y, z));
+				CodeaButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 63, this.topPos + 84, 56, 20).build();
 		this.addRenderableWidget(button_valide);
 	}

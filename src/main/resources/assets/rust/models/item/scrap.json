@@ -1,12 +1,6 @@
 {
   "parent": "rust:custom/scrap",
   "textures": {
-    "0": "rust:block/roue",
-    "1": "rust:block/tole",
-    "2": "rust:block/resort",
-    "3": "rust:block/boulon",
-    "4": "rust:block/tube2",
-    "5": "rust:block/tube",
     "particle": "minecraft:item/barrier"
   }
 }

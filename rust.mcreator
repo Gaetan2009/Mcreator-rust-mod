@@ -31,8 +31,8 @@
       "registry_name": "roche",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/item/RocheItem.java",
           "src/main/resources/assets/rust/models/item/roche.json",
+          "src/main/java/net/mcreator/rust/item/RocheItem.java",
           "src/main/resources/assets/rust/items/roche.json"
         ]
       },
@@ -46,9 +46,9 @@
       "registry_name": "rochee",
       "metadata": {
         "files": [
+          "src/main/resources/assets/rust/items/rochee.json",
           "src/main/resources/assets/rust/models/item/rochee.json",
-          "src/main/java/net/mcreator/rust/item/RocheeItem.java",
-          "src/main/resources/assets/rust/items/rochee.json"
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
         ]
       },
       "path": "~/items/roche"
@@ -61,12 +61,12 @@
       "registry_name": "etablie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/models/block/etablie.json",
-          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
-          "src/main/resources/assets/rust/items/etablie.json",
-          "src/main/resources/assets/rust/models/item/etablie.json",
+          "src/main/java/net/mcreator/rust/block/EtablieBlock.java",
           "src/main/resources/assets/rust/blockstates/etablie.json",
-          "src/main/java/net/mcreator/rust/block/EtablieBlock.java"
+          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
+          "src/main/resources/assets/rust/models/block/etablie.json",
+          "src/main/resources/assets/rust/models/item/etablie.json",
+          "src/main/resources/assets/rust/items/etablie.json"
         ]
       },
       "path": "~/block/Etablie"
@@ -243,6 +243,7 @@
       "registry_name": "code",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/rust/network/CodeButtonMessage.java",
           "src/main/java/net/mcreator/rust/world/inventory/CodeMenu.java",
           "src/main/java/net/mcreator/rust/client/gui/CodeScreen.java"
         ]
@@ -477,7 +478,12 @@
       "gui.rust.code.button_6": "6",
       "gui.rust.code.button_5": "5",
       "gui.rust.code.Code": "Code",
-      "gui.rust.code.label_code": "DigiCode"
+      "gui.rust.code.label_code": "DigiCode",
+      "gui.rust.codea.Code": "Code",
+      "gui.rust.codea.button_valide": "Validé",
+      "item.rust.code_set": "Code Set",
+      "item.rust.salvaged_cleaver": "Salvaged Cleaver",
+      "item.rust.furnacerust": "Furnacerust"
     }
   },
   "metadata": {

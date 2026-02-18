@@ -21,5 +21,10 @@
   "gui.rust.code.button_6": "6",
   "gui.rust.code.button_5": "5",
   "gui.rust.code.Code": "Code",
-  "gui.rust.code.label_code": "DigiCode"
+  "gui.rust.code.label_code": "DigiCode",
+  "gui.rust.codea.Code": "Code",
+  "gui.rust.codea.button_valide": "Validé",
+  "item.rust.code_set": "Code Set",
+  "item.rust.salvaged_cleaver": "Salvaged Cleaver",
+  "item.rust.furnacerust": "Furnacerust"
 }
