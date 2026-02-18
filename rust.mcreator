@@ -1,36 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Roche",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "roche",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/rust/item/RocheItem.java",
-          "src/main/resources/assets/rust/models/item/roche.json",
-          "src/main/resources/assets/rust/items/roche.json"
-        ]
-      },
-      "path": "~/items/roche"
-    },
-    {
-      "name": "Rochee",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rochee",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/rust/models/item/rochee.json",
-          "src/main/java/net/mcreator/rust/item/RocheeItem.java",
-          "src/main/resources/assets/rust/items/rochee.json"
-        ]
-      },
-      "path": "~/items/roche"
-    },
-    {
       "name": "Roche_attack",
       "type": "procedure",
       "compiles": true,
@@ -54,6 +24,36 @@
       "path": "~/items/roche"
     },
     {
+      "name": "Roche",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roche",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/models/item/roche.json",
+          "src/main/java/net/mcreator/rust/item/RocheItem.java",
+          "src/main/resources/assets/rust/items/roche.json"
+        ]
+      },
+      "path": "~/items/roche"
+    },
+    {
+      "name": "Rochee",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rochee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/items/rochee.json",
+          "src/main/resources/assets/rust/models/item/rochee.json",
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
+        ]
+      },
+      "path": "~/items/roche"
+    },
+    {
       "name": "Etablie",
       "type": "block",
       "compiles": true,
@@ -69,6 +69,98 @@
           "src/main/java/net/mcreator/rust/block/EtablieBlock.java"
         ]
       }
+    },
+    {
+      "name": "Rust",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rust",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GrenadeF1Projectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/entity/GrenadeF1ProjectileEntity.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "GrenadeF1Explosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/GrenadeF1ExplosionProcedure.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "GrenadeF1",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/items/grenade_f_1.json",
+          "src/main/resources/assets/rust/models/item/grenade_f_1.json",
+          "src/main/java/net/mcreator/rust/item/GrenadeF1Item.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "GrenadeF1Lance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_f_1_lance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/GrenadeF1LanceProcedure.java"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -86,34 +178,40 @@
     "en_us": {
       "item.rust.roche": "Roche",
       "item.rust.rochee": "Roche",
-      "item.rust.etablie": "Etablie"
+      "item.rust.etablie": "Etablie",
+      "item_group.rust.rust": "Rust",
+      "item.rust.grenade_f_1": "Grenade F1"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
+      "src/main/resources/rust.mixins.json",
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/resources/rust.mixins.json",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "block",
+        "children": []
+      },
       {
         "name": "items",
         "children": [

@@ -3,24 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:barrier",
+    "texture": "minecraft:brown_dye",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Roche",
+    "name": "Grenade F1",
     "rarity": "COMMON",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Rust"
-      }
-    ],
-    "stackSize": 1,
+    "creativeTabs": [],
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 10,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -29,8 +25,8 @@
     "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 2.0,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
     },
@@ -39,8 +35,8 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onItemInUseTick": {
-      "name": "Roche_attack"
+    "onRightClickedInAir": {
+      "name": "GrenadeF1Lance"
     },
     "enableRanged": false,
     "shootConstantly": false,
