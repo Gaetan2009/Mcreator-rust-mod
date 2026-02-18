@@ -32,6 +32,7 @@ public class RustModItems {
 	public static final DeferredItem<Item> GRENADE_F_1_ENTITEE_SPAWN_EGG;
 	public static final DeferredItem<Item> PORTE_EN_METAL;
 	public static final DeferredItem<Item> SALVAGED_CLEAVER;
+	public static final DeferredItem<Item> FURNACERUST;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
@@ -41,6 +42,7 @@ public class RustModItems {
 		GRENADE_F_1_ENTITEE_SPAWN_EGG = register("grenade_f_1_entitee_spawn_egg", properties -> new SpawnEggItem(RustModEntities.GRENADE_F_1_ENTITEE.get(), properties));
 		PORTE_EN_METAL = doubleBlock(RustModBlocks.PORTE_EN_METAL);
 		SALVAGED_CLEAVER = register("salvaged_cleaver", SalvagedCleaverItem::new);
+		FURNACERUST = block(RustModBlocks.FURNACERUST);
 	}
 
 	// Start of user code block custom items

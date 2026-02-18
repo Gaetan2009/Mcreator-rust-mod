@@ -1,0 +1,9 @@
+{
+  "parent": "rust:custom/furnace",
+  "textures": {
+    "all": "rust:block/four_rust",
+    "particle": "rust:block/four_rust",
+    "0": "rust:block/four_rust"
+  },
+  "render_type": "solid"
+}
