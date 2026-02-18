@@ -20,6 +20,5 @@ public class RustModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.rust.rust")).icon(() -> new ItemStack(Items.ZOMBIE_HEAD)).displayItems((parameters, tabData) -> {
 				tabData.accept(RustModItems.ROCHE.get());
 				tabData.accept(RustModItems.ROCHEE.get());
-				tabData.accept(RustModItems.SCRAP.get());
 			}).build());
 }

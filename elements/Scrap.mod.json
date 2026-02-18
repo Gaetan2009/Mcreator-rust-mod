@@ -11,11 +11,7 @@
     "animations": [],
     "name": "Scrap",
     "rarity": "COMMON",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Rust"
-      }
-    ],
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

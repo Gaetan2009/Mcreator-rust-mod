@@ -3,12 +3,12 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "",
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "0": "minecraft:acacia_planks",
+        "1": "minecraft:acacia_planks",
+        "2": "minecraft:acacia_planks",
+        "3": "minecraft:acacia_planks",
+        "4": "minecraft:acacia_planks",
+        "5": "minecraft:acacia_planks"
       }
     }
   }

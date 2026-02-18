@@ -68,7 +68,8 @@
           "src/main/resources/assets/rust/blockstates/etablie.json",
           "src/main/java/net/mcreator/rust/block/EtablieBlock.java"
         ]
-      }
+      },
+      "path": "~/block/Etablie"
     },
     {
       "name": "Rust",
@@ -228,7 +229,12 @@
     "children": [
       {
         "name": "block",
-        "children": []
+        "children": [
+          {
+            "name": "Etablie",
+            "children": []
+          }
+        ]
       },
       {
         "name": "items",
