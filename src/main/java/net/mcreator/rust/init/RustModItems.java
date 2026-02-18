@@ -13,6 +13,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.rust.item.RocheeItem;
 import net.mcreator.rust.item.RocheItem;
+import net.mcreator.rust.item.GrenadeF1Item;
 import net.mcreator.rust.RustMod;
 
 import java.util.function.Function;
@@ -22,10 +23,12 @@ public class RustModItems {
 	public static final DeferredItem<Item> ROCHE;
 	public static final DeferredItem<Item> ROCHEE;
 	public static final DeferredItem<Item> ETABLIE;
+	public static final DeferredItem<Item> GRENADE_F_1;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
 		ETABLIE = block(RustModBlocks.ETABLIE);
+		GRENADE_F_1 = register("grenade_f_1", GrenadeF1Item::new);
 	}
 
 	// Start of user code block custom items

@@ -1,5 +1,7 @@
 {
   "item.rust.roche": "Roche",
   "item.rust.rochee": "Roche",
-  "item.rust.etablie": "Etablie"
+  "item.rust.etablie": "Etablie",
+  "item_group.rust.rust": "Rust",
+  "item.rust.grenade_f_1": "Grenade F1"
 }
