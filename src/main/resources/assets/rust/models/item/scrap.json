@@ -1,12 +1,6 @@
 {
   "parent": "rust:custom/scrap",
   "textures": {
-    "0": "rust:block/",
-    "1": "rust:block/",
-    "2": "rust:block/",
-    "3": "rust:block/",
-    "4": "rust:block/",
-    "5": "rust:block/",
     "particle": "minecraft:item/barrier"
   }
 }
