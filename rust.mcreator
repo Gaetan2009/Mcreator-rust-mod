@@ -61,12 +61,12 @@
       "registry_name": "etablie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/block/EtablieBlock.java",
-          "src/main/resources/assets/rust/blockstates/etablie.json",
-          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
           "src/main/resources/assets/rust/models/block/etablie.json",
+          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
+          "src/main/resources/assets/rust/items/etablie.json",
           "src/main/resources/assets/rust/models/item/etablie.json",
-          "src/main/resources/assets/rust/items/etablie.json"
+          "src/main/resources/assets/rust/blockstates/etablie.json",
+          "src/main/java/net/mcreator/rust/block/EtablieBlock.java"
         ]
       },
       "path": "~/block/Etablie"
@@ -243,96 +243,11 @@
       "registry_name": "code",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/network/CodeButtonMessage.java",
           "src/main/java/net/mcreator/rust/world/inventory/CodeMenu.java",
           "src/main/java/net/mcreator/rust/client/gui/CodeScreen.java"
         ]
       },
       "path": "~/block/Porte en metal/GUI Porte"
-    },
-    {
-      "name": "CodeBon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "code_bon",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/rust/procedures/CodeBonProcedure.java"
-        ]
-      },
-      "path": "~/block/Porte en metal/GUI Porte"
-    },
-    {
-      "name": "SetCode",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_code",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/rust/procedures/SetCodeProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "CodeSet",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "code_set",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/rust/items/code_set.json",
-          "src/main/resources/assets/rust/models/item/code_set.json",
-          "src/main/java/net/mcreator/rust/item/inventory/CodeSetInventoryCapability.java",
-          "src/main/java/net/mcreator/rust/item/CodeSetItem.java"
-        ]
-      }
     },
     {
       "name": "Codea",
@@ -403,6 +318,124 @@
           "src/main/java/net/mcreator/rust/procedures/OuvrirGuiCodeProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SetCode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_code",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/SetCodeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CodeSet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "code_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/items/code_set.json",
+          "src/main/resources/assets/rust/models/item/code_set.json",
+          "src/main/java/net/mcreator/rust/item/inventory/CodeSetInventoryCapability.java",
+          "src/main/java/net/mcreator/rust/item/CodeSetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CodeBon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "code_bon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/CodeBonProcedure.java"
+        ]
+      },
+      "path": "~/block/Porte en metal/GUI Porte"
+    },
+    {
+      "name": "SalvagedCleaver",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salvaged_cleaver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/item/SalvagedCleaverItem.java",
+          "src/main/resources/assets/rust/models/item/salvaged_cleaver.json",
+          "src/main/resources/assets/rust/models/item/salvaged_cleaver_gui.json",
+          "src/main/resources/assets/rust/items/salvaged_cleaver.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Furnacerust",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnacerust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/block/FurnacerustBlock.java",
+          "src/main/resources/assets/rust/models/block/furnacerust.json",
+          "src/main/resources/assets/rust/models/item/furnacerust.json",
+          "src/main/resources/assets/rust/items/furnacerust.json",
+          "src/main/resources/data/rust/loot_table/blocks/furnacerust.json",
+          "src/main/resources/assets/rust/blockstates/furnacerust.json"
+        ]
+      },
+      "path": "~/items"
     }
   ],
   "variable_elements": [],
@@ -412,6 +445,7 @@
       "~CUSTOM:Roche"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:SalvagedCleaver",
       "~CUSTOM:Rochee"
     ],
     "BLOCKS:minecraft:wooden_doors": [
@@ -443,10 +477,7 @@
       "gui.rust.code.button_6": "6",
       "gui.rust.code.button_5": "5",
       "gui.rust.code.Code": "Code",
-      "gui.rust.code.label_code": "DigiCode",
-      "item.rust.code_set": "Code Set",
-      "gui.rust.codea.Code": "Code",
-      "gui.rust.codea.button_valide": "Validé"
+      "gui.rust.code.label_code": "DigiCode"
     }
   },
   "metadata": {
@@ -501,21 +532,21 @@
         ]
       },
       {
+        "name": "Codeset",
+        "children": []
+      },
+      {
         "name": "items",
         "children": [
           {
-            "name": "roche",
+            "name": "Grenade",
             "children": []
           },
           {
-            "name": "Grenade",
+            "name": "roche",
             "children": []
           }
         ]
-      },
-      {
-        "name": "Codeset",
-        "children": []
       }
     ]
   },

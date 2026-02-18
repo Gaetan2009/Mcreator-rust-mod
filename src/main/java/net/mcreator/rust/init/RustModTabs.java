@@ -29,12 +29,15 @@ public class RustModTabs {
 				tabData.accept(RustModItems.GRENADE_F_1.get());
 				tabData.accept(RustModBlocks.PORTE_EN_METAL.get().asItem());
 				tabData.accept(RustModItems.CODE_SET.get());
+				tabData.accept(RustModBlocks.FURNACERUST.get().asItem());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(RustModItems.GRENADE_F_1_ENTITEE_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(RustModItems.SALVAGED_CLEAVER.get());
 		}
 	}
 }

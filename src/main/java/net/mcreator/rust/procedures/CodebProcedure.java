@@ -1,18 +1,6 @@
 package net.mcreator.rust.procedures;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
-
-import net.mcreator.rust.init.RustModMenus;
-import net.mcreator.rust.init.RustModItems;
+import net.neoforged.bus.api.Event;
 
 public class CodebProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -32,7 +20,7 @@ public class CodebProcedure {
 					return 0;
 				}
 			}.convert((entity instanceof Player _entity2 && _entity2.containerMenu instanceof RustModMenus.MenuAccessor _menu2) ? _menu2.getMenuState(0, "Code", "") : "");
-			CustomData.update(DataComponents.CUSTOM_DATA, new ItemStack(RustModItems.CODE_SET.get()), tag -> tag.putDouble(_tagName, _tagValue));
+			CustomData.update(DataComponents.CUSTOM_DATA, new ItemStack(RustModItems.DELETED_MOD_ELEMENT.get()), tag -> tag.putDouble(_tagName, _tagValue));
 		}
 	}
 }

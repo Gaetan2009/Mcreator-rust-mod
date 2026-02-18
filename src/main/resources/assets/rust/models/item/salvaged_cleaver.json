@@ -1,0 +1,7 @@
+{
+  "parent": "rust:custom/model",
+  "textures": {
+    "0": "rust:block/salvaged_cleaver_texture",
+    "particle": "rust:item/salvaged_cleaver_texture"
+  }
+}
