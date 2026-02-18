@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "rust:salvaged_cleaver",
     "rust:rochee"
   ]
 }

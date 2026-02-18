@@ -31,6 +31,8 @@ public class RustModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(RustModItems.GRENADE_F_1_ENTITEE_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(RustModItems.SALVAGED_CLEAVER.get());
 		}
 	}
 }

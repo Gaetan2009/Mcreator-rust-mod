@@ -248,6 +248,22 @@
         ]
       },
       "path": "~/block/Porte en metal/GUI Porte"
+    },
+    {
+      "name": "SalvagedCleaver",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salvaged_cleaver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/models/item/salvaged_cleaver.json",
+          "src/main/resources/assets/rust/models/item/salvaged_cleaver_gui.json",
+          "src/main/java/net/mcreator/rust/item/SalvagedCleaverItem.java",
+          "src/main/resources/assets/rust/items/salvaged_cleaver.json"
+        ]
+      },
+      "path": "~/items"
     }
   ],
   "variable_elements": [],
@@ -257,6 +273,7 @@
       "~CUSTOM:Roche"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:SalvagedCleaver",
       "~CUSTOM:Rochee"
     ],
     "BLOCKS:minecraft:wooden_doors": [
@@ -286,37 +303,38 @@
       "gui.rust.code.button_3": "3",
       "gui.rust.code.button_valide": "validé",
       "gui.rust.code.button_6": "6",
-      "gui.rust.code.button_5": "5"
+      "gui.rust.code.button_5": "5",
+      "item.rust.salvaged_cleaver": "Salvaged Cleaver"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModMenus.java",
       "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
-      "src/main/resources/rust.mixins.json",
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/rust/init/RustModModels.java",
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
     ]
   },
   "foldersRoot": {
