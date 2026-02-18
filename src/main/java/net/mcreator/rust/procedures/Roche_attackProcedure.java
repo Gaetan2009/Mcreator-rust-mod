@@ -1,6 +1,16 @@
 package net.mcreator.rust.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.rust.network.PlayPlayerAnimationMessage;
 
 public class Roche_attackProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
