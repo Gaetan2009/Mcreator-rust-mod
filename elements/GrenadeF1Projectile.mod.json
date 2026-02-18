@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:GrenadeF1"
+      "value": "CUSTOM:Roche"
     },
     "showParticles": false,
     "actionSound": {
@@ -14,8 +14,8 @@
     "power": 1.0,
     "damage": 1.0,
     "knockback": 5,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "Modelmodel_grenade_f1_Converted",
+    "customModelTexture": "vert_contoure.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
     "onHitsBlock": {

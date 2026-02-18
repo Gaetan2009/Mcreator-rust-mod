@@ -8,12 +8,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.mcreator.rust.client.renderer.GrenadeF1ProjectileRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class RustModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(RustModEntities.GRENADE_F_1_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(RustModEntities.GRENADE_F_1_PROJECTILE.get(), GrenadeF1ProjectileRenderer::new);
 	}
 }

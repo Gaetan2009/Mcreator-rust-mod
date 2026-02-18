@@ -25,7 +25,7 @@ import net.mcreator.rust.init.RustModEntities;
 import javax.annotation.Nullable;
 
 public class GrenadeF1ProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(RustModItems.GRENADE_F_1.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(RustModItems.ROCHE.get());
 	private int knockback = 0;
 
 	public GrenadeF1ProjectileEntity(EntityType<? extends GrenadeF1ProjectileEntity> type, Level world) {
@@ -51,7 +51,7 @@ public class GrenadeF1ProjectileEntity extends AbstractArrow implements ItemSupp
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(RustModItems.GRENADE_F_1.get());
+		return new ItemStack(RustModItems.ROCHE.get());
 	}
 
 	@Override

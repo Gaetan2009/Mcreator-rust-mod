@@ -89,6 +89,7 @@
       "registry_name": "grenade_f_1_projectile",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/rust/client/renderer/GrenadeF1ProjectileRenderer.java",
           "src/main/java/net/mcreator/rust/entity/GrenadeF1ProjectileEntity.java"
         ]
       },
@@ -138,6 +139,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/rust/items/grenade_f_1.json",
+          "src/main/java/net/mcreator/rust/client/renderer/item/GrenadeF1ItemRenderer.java",
           "src/main/resources/assets/rust/models/item/grenade_f_1.json",
           "src/main/java/net/mcreator/rust/item/GrenadeF1Item.java"
         ]
@@ -220,6 +222,7 @@
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/rust/init/RustModTabs.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModModels.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]

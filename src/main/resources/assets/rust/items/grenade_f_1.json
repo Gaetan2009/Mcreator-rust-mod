@@ -1,6 +1,9 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "rust:item/grenade_f_1"
+    "type": "minecraft:special",
+    "base": "rust:item/grenade_f_1",
+    "model": {
+      "type": "rust:grenade_f_1"
+    }
   }
 }

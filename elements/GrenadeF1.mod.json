@@ -2,9 +2,9 @@
   "_fv": 79,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "minecraft:brown_dye",
-    "customModelName": "Normal",
+    "renderType": 3,
+    "texture": "vert_contoure",
+    "customModelName": "Modelmodel_grenade_f1_Converted",
     "guiTexture": "",
     "customProperties": {},
     "states": [],

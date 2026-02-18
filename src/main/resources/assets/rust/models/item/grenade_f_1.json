@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "gui_light": "front",
+  "parent": "builtin/entity",
   "textures": {
-    "layer0": "minecraft:item/brown_dye"
+    "layer0": "rust:item/vert_contoure"
   }
 }
