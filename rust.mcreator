@@ -94,7 +94,7 @@
           "src/main/java/net/mcreator/rust/item/GrenadeF1Item.java"
         ]
       },
-      "path": "~/block"
+      "path": "~/items/Grenade"
     },
     {
       "name": "GrenadeF1Explosion",
@@ -129,7 +129,7 @@
           "src/main/java/net/mcreator/rust/procedures/GrenadeF1ExplosionProcedure.java"
         ]
       },
-      "path": "~/block"
+      "path": "~/items/Grenade"
     },
     {
       "name": "GrenadeF1Projectile",
@@ -142,7 +142,7 @@
           "src/main/java/net/mcreator/rust/entity/GrenadeF1ProjectileEntity.java"
         ]
       },
-      "path": "~/block"
+      "path": "~/items/Grenade"
     },
     {
       "name": "GrenadeF1Lance",
@@ -161,7 +161,7 @@
           "src/main/java/net/mcreator/rust/procedures/GrenadeF1LanceProcedure.java"
         ]
       },
-      "path": "~/block"
+      "path": "~/items/Grenade"
     }
   ],
   "variable_elements": [],
@@ -217,6 +217,10 @@
         "children": [
           {
             "name": "roche",
+            "children": []
+          },
+          {
+            "name": "Grenade",
             "children": []
           }
         ]
