@@ -31,8 +31,8 @@
       "registry_name": "roche",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/java/net/mcreator/rust/item/RocheItem.java",
+          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/resources/assets/rust/items/roche.json"
         ]
       },
@@ -46,9 +46,9 @@
       "registry_name": "rochee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/items/rochee.json",
           "src/main/resources/assets/rust/models/item/rochee.json",
-          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java",
+          "src/main/resources/assets/rust/items/rochee.json"
         ]
       },
       "path": "~/items/roche"
@@ -61,12 +61,12 @@
       "registry_name": "etablie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/block/EtablieBlock.java",
-          "src/main/resources/assets/rust/blockstates/etablie.json",
-          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
           "src/main/resources/assets/rust/models/block/etablie.json",
+          "src/main/resources/data/rust/loot_table/blocks/etablie.json",
+          "src/main/resources/assets/rust/items/etablie.json",
           "src/main/resources/assets/rust/models/item/etablie.json",
-          "src/main/resources/assets/rust/items/etablie.json"
+          "src/main/resources/assets/rust/blockstates/etablie.json",
+          "src/main/java/net/mcreator/rust/block/EtablieBlock.java"
         ]
       },
       "path": "~/block/Etablie"
@@ -187,10 +187,10 @@
       "registry_name": "grenade_f_1_entitee",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/rust/entity/GrenadeF1EntiteeEntity.java",
           "src/main/resources/assets/rust/items/grenade_f_1_entitee_spawn_egg.json",
           "src/main/resources/assets/rust/models/item/grenade_f_1_entitee_spawn_egg.json",
-          "src/main/java/net/mcreator/rust/client/renderer/GrenadeF1EntiteeRenderer.java",
-          "src/main/java/net/mcreator/rust/entity/GrenadeF1EntiteeEntity.java"
+          "src/main/java/net/mcreator/rust/client/renderer/GrenadeF1EntiteeRenderer.java"
         ]
       },
       "path": "~/items/Grenade"
@@ -217,20 +217,20 @@
       "registry_name": "porte_en_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/blockstates/porte_en_metal.json",
           "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_left_open.json",
           "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_right_open.json",
-          "src/main/java/net/mcreator/rust/block/entity/PorteEnMetalBlockEntity.java",
-          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_right.json",
-          "src/main/resources/assets/rust/models/block/porte_en_metal_top_right.json",
-          "src/main/resources/assets/rust/items/porte_en_metal.json",
           "src/main/resources/assets/rust/models/item/porte_en_metal.json",
-          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left.json",
+          "src/main/java/net/mcreator/rust/block/PorteEnMetalBlock.java",
+          "src/main/java/net/mcreator/rust/block/entity/PorteEnMetalBlockEntity.java",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_right.json",
           "src/main/resources/data/rust/loot_table/blocks/porte_en_metal.json",
-          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left_open.json",
+          "src/main/resources/assets/rust/blockstates/porte_en_metal.json",
           "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_left.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_bottom_right.json",
+          "src/main/resources/assets/rust/items/porte_en_metal.json",
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left_open.json",
           "src/main/resources/assets/rust/models/block/porte_en_metal_top_right_open.json",
-          "src/main/java/net/mcreator/rust/block/PorteEnMetalBlock.java"
+          "src/main/resources/assets/rust/models/block/porte_en_metal_top_left.json"
         ]
       },
       "path": "~/block/Porte en metal"
@@ -244,8 +244,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/rust/network/CodeButtonMessage.java",
-          "src/main/java/net/mcreator/rust/world/inventory/CodeMenu.java",
-          "src/main/java/net/mcreator/rust/client/gui/CodeScreen.java"
+          "src/main/java/net/mcreator/rust/client/gui/CodeScreen.java",
+          "src/main/java/net/mcreator/rust/world/inventory/CodeMenu.java"
         ]
       },
       "path": "~/block/Porte en metal/GUI Porte"
@@ -253,14 +253,14 @@
     {
       "name": "Codea",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "codea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/client/gui/CodeaScreen.java",
+          "src/main/java/net/mcreator/rust/world/inventory/CodeaMenu.java",
           "src/main/java/net/mcreator/rust/network/CodeaButtonMessage.java",
-          "src/main/java/net/mcreator/rust/world/inventory/CodeaMenu.java"
+          "src/main/java/net/mcreator/rust/client/gui/CodeaScreen.java"
         ]
       },
       "path": "~/Codeset"
@@ -276,10 +276,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -332,6 +328,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -366,9 +366,9 @@
       "registry_name": "code_set",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/rust/item/inventory/CodeSetInventoryCapability.java",
           "src/main/resources/assets/rust/items/code_set.json",
           "src/main/resources/assets/rust/models/item/code_set.json",
-          "src/main/java/net/mcreator/rust/item/inventory/CodeSetInventoryCapability.java",
           "src/main/java/net/mcreator/rust/item/CodeSetItem.java"
         ]
       },
@@ -417,9 +417,9 @@
       "registry_name": "salvaged_cleaver",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/item/SalvagedCleaverItem.java",
           "src/main/resources/assets/rust/models/item/salvaged_cleaver.json",
           "src/main/resources/assets/rust/models/item/salvaged_cleaver_gui.json",
+          "src/main/java/net/mcreator/rust/item/SalvagedCleaverItem.java",
           "src/main/resources/assets/rust/items/salvaged_cleaver.json"
         ]
       },
@@ -433,12 +433,12 @@
       "registry_name": "furnacerust",
       "metadata": {
         "files": [
+          "src/main/resources/assets/rust/models/item/furnacerust.json",
+          "src/main/resources/assets/rust/blockstates/furnacerust.json",
           "src/main/java/net/mcreator/rust/block/FurnacerustBlock.java",
           "src/main/resources/assets/rust/models/block/furnacerust.json",
-          "src/main/resources/assets/rust/models/item/furnacerust.json",
-          "src/main/resources/assets/rust/items/furnacerust.json",
           "src/main/resources/data/rust/loot_table/blocks/furnacerust.json",
-          "src/main/resources/assets/rust/blockstates/furnacerust.json"
+          "src/main/resources/assets/rust/items/furnacerust.json"
         ]
       },
       "path": "~/items"
@@ -524,6 +524,20 @@
         ]
       },
       "path": "~/block/Caisse"
+    },
+    {
+      "name": "Metalfragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalfragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/models/item/metalfragment.json",
+          "src/main/java/net/mcreator/rust/item/MetalfragmentItem.java",
+          "src/main/resources/assets/rust/items/metalfragment.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -570,37 +584,40 @@
       "gui.rust.codea.button_valide": "Validé",
       "item.rust.code_set": "Code Set",
       "item.rust.salvaged_cleaver": "Salvaged Cleaver",
-      "item.rust.furnacerust": "Furnacerust"
+      "item.rust.furnacerust": "Furnacerust",
+      "item.rust.broilieur": "Broilieur",
+      "item.rust.caisse": "Caisse",
+      "item.rust.metalfragment": "Metalfragment"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModMenus.java",
       "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
-      "src/main/resources/rust.mixins.json",
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/rust/init/RustModModels.java",
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
     ]
   },
   "foldersRoot": {

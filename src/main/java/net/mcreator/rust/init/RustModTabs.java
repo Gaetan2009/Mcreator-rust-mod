@@ -31,6 +31,7 @@ public class RustModTabs {
 				tabData.accept(RustModItems.CODE_SET.get());
 				tabData.accept(RustModBlocks.FURNACERUST.get().asItem());
 				tabData.accept(RustModBlocks.BROILIEUR.get().asItem());
+				tabData.accept(RustModItems.METALFRAGMENT.get());
 			}).build());
 
 	@SubscribeEvent

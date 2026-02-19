@@ -1,5 +1,17 @@
 package net.mcreator.rust.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.rust.world.inventory.GuiCaisseMenu;
+import net.mcreator.rust.init.RustModScreens;
+
 public class GuiCaisseScreen extends AbstractContainerScreen<GuiCaisseMenu> implements RustModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;

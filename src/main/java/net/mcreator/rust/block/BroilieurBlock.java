@@ -1,6 +1,14 @@
 package net.mcreator.rust.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.core.BlockPos;
 
 public class BroilieurBlock extends Block {
 	private static final VoxelShape SHAPE = Shapes.or(box(12, 18, 22, 14, 23, 24), box(12, 18, 19, 14, 23, 21), box(12, 18, 15, 14, 23, 17), box(12, 18, 12, 14, 23, 14), box(12, 18, 25, 14, 23, 27), box(12, 18, 9, 14, 23, 11),
