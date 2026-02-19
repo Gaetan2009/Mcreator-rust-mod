@@ -177,7 +177,8 @@
           "src/main/resources/assets/rust/models/item/scrap.json",
           "src/main/resources/assets/rust/items/scrap.json"
         ]
-      }
+      },
+      "path": "~/items"
     },
     {
       "name": "GrenadeF1Entitee",
@@ -458,7 +459,8 @@
           "src/main/resources/data/rust/loot_table/blocks/broilieur.json",
           "src/main/resources/assets/rust/models/block/broilieur.json"
         ]
-      }
+      },
+      "path": "~/block"
     },
     {
       "name": "TableButinCaisse",
@@ -537,7 +539,8 @@
           "src/main/java/net/mcreator/rust/item/MetalfragmentItem.java",
           "src/main/resources/assets/rust/items/metalfragment.json"
         ]
-      }
+      },
+      "path": "~/items"
     }
   ],
   "variable_elements": [],

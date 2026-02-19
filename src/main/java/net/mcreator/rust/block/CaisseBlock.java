@@ -1,5 +1,8 @@
 package net.mcreator.rust.block;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -8,6 +11,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -26,13 +30,34 @@ import net.mcreator.rust.block.entity.CaisseBlockEntity;
 import io.netty.buffer.Unpooled;
 
 public class CaisseBlock extends Block implements EntityBlock {
+	private static final VoxelShape SHAPE = Shapes.or(box(22, 24, -1, 27, 25, 0), box(22, 18, -1, 27, 19, 0), box(22, 19, -1, 23, 24, 1), box(22, 19, 1, 27, 24, 2), box(26, 19, -1, 27, 24, 1), box(5, 24, -1, 10, 25, 0), box(5, 18, -1, 10, 19, 0),
+			box(5, 19, -1, 6, 24, 1), box(5, 19, 1, 10, 24, 2), box(9, 19, -1, 10, 24, 1), box(6, 0, 31, 9, 30, 32), box(23, 0, 31, 26, 30, 32), box(23, 31, 5, 26, 32, 27), box(6, 31, 5, 9, 32, 27), box(6, 30, 1, 9, 31, 6), box(23, 30, 1, 26, 31, 6),
+			box(6, 30, 26, 9, 31, 31), box(23, 30, 26, 26, 31, 31), box(1, 30, 23, 31, 31, 26), box(1, 30, 6, 31, 31, 9), box(0, 0, 6, 1, 30, 9), box(0, 0, 23, 1, 30, 26), box(31, 0, 23, 32, 30, 26), box(23, 0, 0, 26, 30, 1),
+			box(31, 0, 6, 32, 30, 9), box(6, 0, 0, 9, 30, 1), box(2, 1, 2, 30, 29, 30), box(30, 27, 1, 31, 29, 31), box(2, 27, 1, 30, 29, 2), box(2, 1, 30, 30, 3, 31), box(2, 27, 30, 30, 29, 31), box(2, 1, 1, 30, 3, 2), box(30, 1, 1, 31, 3, 31),
+			box(1, 1, 1, 2, 3, 31), box(1, 27, 1, 2, 29, 31), box(1, 0, 1, 31, 1, 31), box(1, 29, 1, 31, 30, 31));
+
 	public CaisseBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public boolean propagatesSkylightDown(BlockState state) {
+		return true;
 	}
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return (SHAPE);
 	}
 
 	@Override

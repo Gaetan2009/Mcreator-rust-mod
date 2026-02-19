@@ -1,6 +1,6 @@
 {
-  "parent": "rust:custom/scrap",
+  "parent": "item/generated",
   "textures": {
-    "particle": "minecraft:item/barrier"
+    "layer0": "rust:item/scrap_"
   }
 }

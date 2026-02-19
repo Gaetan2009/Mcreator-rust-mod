@@ -1,13 +1,11 @@
 {
-  "parent": "block/cube",
+  "parent": "rust:custom/caisse",
   "textures": {
-    "down": "minecraft:block/barrel_bottom",
-    "up": "minecraft:block/barrel_bottom",
-    "north": "minecraft:block/barrel_bottom",
-    "east": "minecraft:block/barrel_bottom",
-    "south": "minecraft:block/barrel_bottom",
-    "west": "minecraft:block/barrel_bottom",
-    "particle": "minecraft:block/barrel_bottom"
+    "all": "rust:block/caisse_grosse",
+    "particle": "rust:block/caisse_grosse",
+    "0": "rust:block/caisse_grosse",
+    "1": "rust:block/clips",
+    "2": "rust:block/sangle"
   },
   "render_type": "solid"
 }
