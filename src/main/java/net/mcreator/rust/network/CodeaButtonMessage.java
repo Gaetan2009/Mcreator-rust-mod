@@ -49,7 +49,7 @@ public record CodeaButtonMessage(int buttonID, int x, int y, int z) implements C
 			return;
 		if (buttonID == 0) {
 
-			CodebProcedure.execute(world, entity);
+			CodebProcedure.execute(entity);
 		}
 	}
 

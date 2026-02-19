@@ -1,6 +1,15 @@
 package net.mcreator.rust.procedures;
 
-import net.neoforged.bus.api.Event;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.core.component.DataComponents;
+
+import net.mcreator.rust.init.RustModMenus;
 
 public class CodebProcedure {
 	public static void execute(Entity entity) {
