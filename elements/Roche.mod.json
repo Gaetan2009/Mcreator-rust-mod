@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "minecraft:barrier",
     "customModelName": "roche:default",
-    "guiTexture": "minecraft:stone_pickaxe",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],

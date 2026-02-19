@@ -18,7 +18,7 @@
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Door",
-    "blockSetType": "OAK",
+    "blockSetType": "IRON",
     "pottedPlant": {
       "value": ""
     },

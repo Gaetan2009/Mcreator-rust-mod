@@ -8,7 +8,7 @@
     "texture": "minecraft:barrier",
     "customModelName": "roche:default",
     "blockingModelName": "Normal blocking",
-    "guiTexture": "minecraft:stone_pickaxe",
+    "guiTexture": "",
     "name": "Roche",
     "specialInformation": {
       "fixedValue": []
