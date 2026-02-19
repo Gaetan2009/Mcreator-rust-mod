@@ -36,7 +36,6 @@ public class RustModItems {
 	public static final DeferredItem<Item> CODE_SET;
 	public static final DeferredItem<Item> SALVAGED_CLEAVER;
 	public static final DeferredItem<Item> FURNACERUST;
-	public static final DeferredItem<Item> BROILIEUR;
 	public static final DeferredItem<Item> CAISSE;
 	public static final DeferredItem<Item> METALFRAGMENT;
 	static {
@@ -50,7 +49,6 @@ public class RustModItems {
 		CODE_SET = register("code_set", CodeSetItem::new);
 		SALVAGED_CLEAVER = register("salvaged_cleaver", SalvagedCleaverItem::new);
 		FURNACERUST = block(RustModBlocks.FURNACERUST);
-		BROILIEUR = block(RustModBlocks.BROILIEUR);
 		CAISSE = block(RustModBlocks.CAISSE);
 		METALFRAGMENT = register("metalfragment", MetalfragmentItem::new);
 	}

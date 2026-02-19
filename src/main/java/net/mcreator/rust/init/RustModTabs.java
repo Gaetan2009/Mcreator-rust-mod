@@ -31,7 +31,6 @@ public class RustModTabs {
 				tabData.accept(RustModBlocks.PORTE_EN_METAL.get().asItem());
 				tabData.accept(RustModItems.CODE_SET.get());
 				tabData.accept(RustModBlocks.FURNACERUST.get().asItem());
-				tabData.accept(RustModBlocks.BROILIEUR.get().asItem());
 				tabData.accept(RustModBlocks.CAISSE.get().asItem());
 				tabData.accept(RustModItems.METALFRAGMENT.get());
 			}).build());
