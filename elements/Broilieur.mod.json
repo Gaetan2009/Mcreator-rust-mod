@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "meuble_broi",
+    "texture": "minecraft:acacia_log",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
-    "itemTexture": "minecraft:cake",
+    "itemTexture": "",
     "particleTexture": "",
     "blockSetType": "OAK",
     "pottedPlant": {

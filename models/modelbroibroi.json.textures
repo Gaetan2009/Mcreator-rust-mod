@@ -3,9 +3,9 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "meuble_broi",
-        "1": "bouton",
-        "2": "bar_dedans"
+        "0": "minecraft:acacia_log",
+        "1": "minecraft:acacia_log",
+        "2": "minecraft:acacia_log"
       }
     }
   }

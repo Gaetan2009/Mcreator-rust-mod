@@ -26,5 +26,7 @@
   "gui.rust.codea.button_valide": "Validé",
   "item.rust.code_set": "Code Set",
   "item.rust.salvaged_cleaver": "Salvaged Cleaver",
-  "item.rust.furnacerust": "Furnacerust"
+  "item.rust.furnacerust": "Furnacerust",
+  "item.rust.broilieur": "Broilieur",
+  "item.rust.caisse": "Caisse"
 }

@@ -276,10 +276,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -331,6 +327,10 @@
       "registry_name": "set_code",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -451,12 +451,12 @@
       "registry_name": "broilieur",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/models/item/broilieur.json",
-          "src/main/java/net/mcreator/rust/block/BroilieurBlock.java",
-          "src/main/resources/assets/rust/blockstates/broilieur.json",
-          "src/main/resources/assets/rust/items/broilieur.json",
           "src/main/resources/data/rust/loot_table/blocks/broilieur.json",
-          "src/main/resources/assets/rust/models/block/broilieur.json"
+          "src/main/resources/assets/rust/blockstates/broilieur.json",
+          "src/main/resources/assets/rust/models/item/broilieur.json",
+          "src/main/resources/assets/rust/items/broilieur.json",
+          "src/main/resources/assets/rust/models/block/broilieur.json",
+          "src/main/java/net/mcreator/rust/block/BroilieurBlock.java"
         ]
       }
     },
@@ -480,12 +480,7 @@
       "locked_code": false,
       "registry_name": "caisse_cree",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/rust/procedures/CaisseCreeProcedure.java"
         ]
@@ -500,13 +495,13 @@
       "registry_name": "caisse",
       "metadata": {
         "files": [
-          "src/main/resources/data/rust/loot_table/blocks/caisse.json",
+          "src/main/resources/assets/rust/blockstates/caisse.json",
+          "src/main/java/net/mcreator/rust/block/entity/CaisseBlockEntity.java",
+          "src/main/resources/assets/rust/models/block/caisse.json",
           "src/main/java/net/mcreator/rust/block/CaisseBlock.java",
           "src/main/resources/assets/rust/items/caisse.json",
-          "src/main/resources/assets/rust/blockstates/caisse.json",
-          "src/main/resources/assets/rust/models/block/caisse.json",
-          "src/main/java/net/mcreator/rust/block/entity/CaisseBlockEntity.java",
-          "src/main/resources/assets/rust/models/item/caisse.json"
+          "src/main/resources/assets/rust/models/item/caisse.json",
+          "src/main/resources/data/rust/loot_table/blocks/caisse.json"
         ]
       },
       "path": "~/block/Caisse"
@@ -519,8 +514,8 @@
       "registry_name": "gui_caisse",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/world/inventory/GuiCaisseMenu.java",
-          "src/main/java/net/mcreator/rust/client/gui/GuiCaisseScreen.java"
+          "src/main/java/net/mcreator/rust/client/gui/GuiCaisseScreen.java",
+          "src/main/java/net/mcreator/rust/world/inventory/GuiCaisseMenu.java"
         ]
       },
       "path": "~/block/Caisse"
@@ -570,7 +565,9 @@
       "gui.rust.codea.button_valide": "Validé",
       "item.rust.code_set": "Code Set",
       "item.rust.salvaged_cleaver": "Salvaged Cleaver",
-      "item.rust.furnacerust": "Furnacerust"
+      "item.rust.furnacerust": "Furnacerust",
+      "item.rust.broilieur": "Broilieur",
+      "item.rust.caisse": "Caisse"
     }
   },
   "metadata": {
