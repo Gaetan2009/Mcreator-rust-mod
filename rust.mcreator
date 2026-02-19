@@ -534,6 +534,40 @@
         ]
       },
       "path": "~/items"
+    },
+    {
+      "name": "Fly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/FlyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "W",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "w",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/network/WMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -583,7 +617,8 @@
       "item.rust.furnacerust": "Furnacerust",
       "item.rust.broilieur": "Broilieur",
       "item.rust.caisse": "Caisse",
-      "item.rust.metalfragment": "Metalfragment"
+      "item.rust.metalfragment": "Metalfragment",
+      "key.rust.w": "W"
     }
   },
   "metadata": {
@@ -591,6 +626,7 @@
       "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModMenus.java",
       "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rust/init/RustModKeyMappings.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",

@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:acacia_log",
+    "texture": "bar_dedans",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "modelbroibroi:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "rust:block/broilieur"
+    },
+    "facing=east": {
+      "model": "rust:block/broilieur",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "rust:block/broilieur",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "rust:block/broilieur",
+      "y": 270
     }
   }
 }

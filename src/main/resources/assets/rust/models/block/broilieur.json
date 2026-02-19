@@ -1,8 +1,8 @@
 {
   "parent": "rust:custom/modelbroibroi",
   "textures": {
-    "all": "minecraft:block/acacia_log",
-    "particle": "minecraft:block/acacia_log",
+    "all": "rust:block/bar_dedans",
+    "particle": "rust:block/bar_dedans",
     "0": "minecraft:block/acacia_log",
     "1": "minecraft:block/acacia_log",
     "2": "minecraft:block/acacia_log"

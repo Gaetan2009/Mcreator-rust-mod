@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "W",
+    "keyBindingName": "W",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Fly"
+    }
+  }
+}

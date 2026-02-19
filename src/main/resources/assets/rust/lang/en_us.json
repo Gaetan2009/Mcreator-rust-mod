@@ -29,5 +29,6 @@
   "item.rust.furnacerust": "Furnacerust",
   "item.rust.broilieur": "Broilieur",
   "item.rust.caisse": "Caisse",
-  "item.rust.metalfragment": "Metalfragment"
+  "item.rust.metalfragment": "Metalfragment",
+  "key.rust.w": "W"
 }
