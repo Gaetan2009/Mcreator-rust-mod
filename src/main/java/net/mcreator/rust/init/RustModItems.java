@@ -36,6 +36,7 @@ public class RustModItems {
 	public static final DeferredItem<Item> CODE_SET;
 	public static final DeferredItem<Item> SALVAGED_CLEAVER;
 	public static final DeferredItem<Item> FURNACERUST;
+	public static final DeferredItem<Item> BROILIEUR;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
@@ -47,6 +48,7 @@ public class RustModItems {
 		CODE_SET = register("code_set", CodeSetItem::new);
 		SALVAGED_CLEAVER = register("salvaged_cleaver", SalvagedCleaverItem::new);
 		FURNACERUST = block(RustModBlocks.FURNACERUST);
+		BROILIEUR = block(RustModBlocks.BROILIEUR);
 	}
 
 	// Start of user code block custom items

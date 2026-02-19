@@ -1,0 +1,11 @@
+{
+  "parent": "rust:custom/modelbroibroi",
+  "textures": {
+    "all": "rust:block/meuble_broi",
+    "particle": "rust:block/meuble_broi",
+    "0": "rust:block/meuble_broi",
+    "1": "rust:block/bouton",
+    "2": "rust:block/bar_dedans"
+  },
+  "render_type": "solid"
+}

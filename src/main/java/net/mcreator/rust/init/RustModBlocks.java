@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.rust.block.PorteEnMetalBlock;
 import net.mcreator.rust.block.FurnacerustBlock;
 import net.mcreator.rust.block.EtablieBlock;
+import net.mcreator.rust.block.BroilieurBlock;
 import net.mcreator.rust.RustMod;
 
 import java.util.function.Function;
@@ -21,10 +22,12 @@ public class RustModBlocks {
 	public static final DeferredBlock<Block> ETABLIE;
 	public static final DeferredBlock<Block> PORTE_EN_METAL;
 	public static final DeferredBlock<Block> FURNACERUST;
+	public static final DeferredBlock<Block> BROILIEUR;
 	static {
 		ETABLIE = register("etablie", EtablieBlock::new);
 		PORTE_EN_METAL = register("porte_en_metal", PorteEnMetalBlock::new);
 		FURNACERUST = register("furnacerust", FurnacerustBlock::new);
+		BROILIEUR = register("broilieur", BroilieurBlock::new);
 	}
 
 	// Start of user code block custom blocks
