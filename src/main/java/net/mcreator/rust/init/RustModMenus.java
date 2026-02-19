@@ -16,6 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.rust.world.inventory.GuiCaisseMenu;
 import net.mcreator.rust.world.inventory.CodeaMenu;
 import net.mcreator.rust.world.inventory.CodeMenu;
 import net.mcreator.rust.network.MenuStateUpdateMessage;
@@ -27,6 +28,7 @@ public class RustModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, RustMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<CodeMenu>> CODE = REGISTRY.register("code", () -> IMenuTypeExtension.create(CodeMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CodeaMenu>> CODEA = REGISTRY.register("codea", () -> IMenuTypeExtension.create(CodeaMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GuiCaisseMenu>> GUI_CAISSE = REGISTRY.register("gui_caisse", () -> IMenuTypeExtension.create(GuiCaisseMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

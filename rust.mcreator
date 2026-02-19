@@ -459,6 +459,71 @@
           "src/main/resources/assets/rust/models/block/broilieur.json"
         ]
       }
+    },
+    {
+      "name": "TableButinCaisse",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "table_butin_caisse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rust/loot_table/blocks/caisse.json"
+        ]
+      },
+      "path": "~/block/Caisse"
+    },
+    {
+      "name": "CaisseCree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caisse_cree",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rust/procedures/CaisseCreeProcedure.java"
+        ]
+      },
+      "path": "~/block/Caisse"
+    },
+    {
+      "name": "Caisse",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caisse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rust/loot_table/blocks/caisse.json",
+          "src/main/java/net/mcreator/rust/block/CaisseBlock.java",
+          "src/main/resources/assets/rust/items/caisse.json",
+          "src/main/resources/assets/rust/blockstates/caisse.json",
+          "src/main/resources/assets/rust/models/block/caisse.json",
+          "src/main/java/net/mcreator/rust/block/entity/CaisseBlockEntity.java",
+          "src/main/resources/assets/rust/models/item/caisse.json"
+        ]
+      },
+      "path": "~/block/Caisse"
+    },
+    {
+      "name": "GuiCaisse",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_caisse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rust/world/inventory/GuiCaisseMenu.java",
+          "src/main/java/net/mcreator/rust/client/gui/GuiCaisseScreen.java"
+        ]
+      },
+      "path": "~/block/Caisse"
     }
   ],
   "variable_elements": [],
@@ -505,38 +570,37 @@
       "gui.rust.codea.button_valide": "Validé",
       "item.rust.code_set": "Code Set",
       "item.rust.salvaged_cleaver": "Salvaged Cleaver",
-      "item.rust.furnacerust": "Furnacerust",
-      "item.rust.broilieur": "Broilieur"
+      "item.rust.furnacerust": "Furnacerust"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModMenus.java",
       "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
       "src/main/java/net/mcreator/rust/init/RustModEntities.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
-      "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
-      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/rust/init/RustModModels.java",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
       "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
+      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
+      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -557,6 +621,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Caisse",
+            "children": []
           }
         ]
       },
