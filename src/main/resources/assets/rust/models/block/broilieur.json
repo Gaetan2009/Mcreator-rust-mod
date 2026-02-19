@@ -3,9 +3,9 @@
   "textures": {
     "all": "minecraft:block/acacia_log",
     "particle": "minecraft:block/acacia_log",
-    "0": "rust:block/meuble_broi",
-    "1": "rust:block/bouton",
-    "2": "rust:block/bar_dedans"
+    "0": "minecraft:block/acacia_log",
+    "1": "minecraft:block/acacia_log",
+    "2": "minecraft:block/acacia_log"
   },
   "render_type": "solid"
 }

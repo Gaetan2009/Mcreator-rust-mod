@@ -514,11 +514,26 @@
       "registry_name": "gui_caisse",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rust/client/gui/GuiCaisseScreen.java",
-          "src/main/java/net/mcreator/rust/world/inventory/GuiCaisseMenu.java"
+          "src/main/java/net/mcreator/rust/world/inventory/GuiCaisseMenu.java",
+          "src/main/java/net/mcreator/rust/client/gui/GuiCaisseScreen.java"
         ]
       },
       "path": "~/block/Caisse"
+    },
+    {
+      "name": "Metalfragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalfragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rust/models/item/metalfragment.json",
+          "src/main/java/net/mcreator/rust/item/MetalfragmentItem.java",
+          "src/main/resources/assets/rust/items/metalfragment.json"
+        ]
+      },
+      "path": "~/items"
     }
   ],
   "variable_elements": [],

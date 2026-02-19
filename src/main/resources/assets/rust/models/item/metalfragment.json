@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "rust:item/scrap_"
+    "layer0": "rust:item/metal.fragments"
   }
 }

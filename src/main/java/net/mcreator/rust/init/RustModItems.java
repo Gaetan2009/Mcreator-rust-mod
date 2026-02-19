@@ -38,6 +38,7 @@ public class RustModItems {
 	public static final DeferredItem<Item> FURNACERUST;
 	public static final DeferredItem<Item> BROILIEUR;
 	public static final DeferredItem<Item> CAISSE;
+	public static final DeferredItem<Item> METALFRAGMENT;
 	static {
 		ROCHE = register("roche", RocheItem::new);
 		ROCHEE = register("rochee", RocheeItem::new);
@@ -51,6 +52,7 @@ public class RustModItems {
 		FURNACERUST = block(RustModBlocks.FURNACERUST);
 		BROILIEUR = block(RustModBlocks.BROILIEUR);
 		CAISSE = block(RustModBlocks.CAISSE);
+		METALFRAGMENT = register("metalfragment", MetalfragmentItem::new);
 	}
 
 	// Start of user code block custom items

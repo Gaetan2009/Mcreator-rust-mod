@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "scrap_",
+    "texture": "metal.fragments",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Scrap",
+    "name": "Metalfragment",
     "rarity": "COMMON",
     "creativeTabs": [
       {
