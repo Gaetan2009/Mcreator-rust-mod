@@ -17,12 +17,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.rust.block.entity.PorteEnMetalBlockEntity;
+import net.mcreator.rust.block.entity.CaisseBlockEntity;
 import net.mcreator.rust.RustMod;
 
 @EventBusSubscriber
 public class RustModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RustMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PorteEnMetalBlockEntity>> PORTE_EN_METAL = register("porte_en_metal", RustModBlocks.PORTE_EN_METAL, PorteEnMetalBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CaisseBlockEntity>> CAISSE = register("caisse", RustModBlocks.CAISSE, CaisseBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +35,6 @@ public class RustModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PORTE_EN_METAL.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CAISSE.get(), SidedInvWrapper::new);
 	}
 }
