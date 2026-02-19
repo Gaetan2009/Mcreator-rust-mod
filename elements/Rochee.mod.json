@@ -3,12 +3,12 @@
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
-    "renderType": 0,
+    "renderType": 1,
     "blockingRenderType": 0,
     "texture": "minecraft:barrier",
-    "customModelName": "Normal",
+    "customModelName": "roche:default",
     "blockingModelName": "Normal blocking",
-    "guiTexture": "",
+    "guiTexture": "minecraft:stone_pickaxe",
     "name": "Roche",
     "specialInformation": {
       "fixedValue": []

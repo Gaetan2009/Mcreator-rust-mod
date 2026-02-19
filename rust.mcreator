@@ -31,8 +31,9 @@
       "registry_name": "roche",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/java/net/mcreator/rust/item/RocheItem.java",
+          "src/main/resources/assets/rust/models/item/roche_gui.json",
+          "src/main/resources/assets/rust/models/item/roche.json",
           "src/main/resources/assets/rust/items/roche.json"
         ]
       },
@@ -46,9 +47,10 @@
       "registry_name": "rochee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rust/items/rochee.json",
           "src/main/resources/assets/rust/models/item/rochee.json",
-          "src/main/java/net/mcreator/rust/item/RocheeItem.java"
+          "src/main/java/net/mcreator/rust/item/RocheeItem.java",
+          "src/main/resources/assets/rust/models/item/rochee_gui.json",
+          "src/main/resources/assets/rust/items/rochee.json"
         ]
       },
       "path": "~/items/roche"
@@ -488,32 +490,32 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModMenus.java",
       "src/main/java/net/mcreator/rust/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rust/init/RustModScreens.java",
       "src/main/java/net/mcreator/rust/init/RustModBlocks.java",
       "src/main/java/net/mcreator/rust/init/RustModBlockEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModItems.java",
-      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
       "src/main/java/net/mcreator/rust/init/RustModEntityRenderers.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
-      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/rust/RustMod.java",
-      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java",
-      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/rust/init/RustModEntities.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rust/init/RustModRenderStateModifiers.java",
-      "src/main/resources/rust.mixins.json",
       "src/main/java/net/mcreator/rust/RustModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
       "src/main/java/net/mcreator/rust/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/rust/init/RustModTabs.java",
+      "src/main/java/net/mcreator/rust/RustMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/rust/init/RustModModels.java",
+      "src/main/java/net/mcreator/rust/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/CameraAccessor.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/rust/mixin/PlayerAnimationMixin.java",
+      "src/main/resources/rust.mixins.json",
+      "src/main/java/net/mcreator/rust/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/rust/mixin/EntityRenderDispatcherMixin.java"
     ]
   },
   "foldersRoot": {

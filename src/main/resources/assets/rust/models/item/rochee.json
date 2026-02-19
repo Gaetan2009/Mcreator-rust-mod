@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "rust:custom/roche",
   "textures": {
-    "layer0": "minecraft:item/barrier"
+    "0": "rust:block/textureroche",
+    "particle": "minecraft:item/barrier"
   }
 }

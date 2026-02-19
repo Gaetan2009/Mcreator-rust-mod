@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "minecraft:barrier",
-    "customModelName": "Normal",
-    "guiTexture": "",
+    "customModelName": "roche:default",
+    "guiTexture": "minecraft:stone_pickaxe",
     "customProperties": {},
     "states": [],
     "animations": [],
